@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Portfolio Analytics</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 
+Chart.js CDN link
+This loads the Chart.js library from the internet.
+Without this, the 'new Chart()' function will not work.
+-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<h1 class="title">Project Portfolio Analytics</h1>
+<p class="subtitle">Insights from my development and machine learning projects</p>
+
+    <div class="summary">
+        <div class="card">
+            <h3>Total Projects</h3>
+            <p id="totalProjects"></p>
+        </div>
+
+        <div class="card">
+            <h3>Total Hours Invested</h3>
+            <p id="totalHours"></p>
+        </div>
+
+        <div class="card">
+            <h3>Average Difficulty</h3>
+            <p id="avgDifficulty"></p>
+        </div>
+    </div>
+
+    <div class="chart-container">
+        <canvas id="categoryChart"></canvas>
+    </div>
+
+    <div class="chart-container">
+        <canvas id="hoursChart"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+    <footer>
+    <p>Project Analytics Dashboard | Built using HTML, CSS, JS & Chart.js</p>
+</footer>
+
+</body>
+</html>
